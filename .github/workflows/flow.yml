@@ -1,0 +1,9 @@
+name: demo
+on: [push]
+jobs:
+  First-Job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "first step"
+      - name: Second step
+        run: echo "second step"
