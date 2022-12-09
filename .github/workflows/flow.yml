@@ -12,9 +12,9 @@ jobs:
     needs: First-Job
     steps:
       - run: echo "second job"
-#  Third-Job:
-#    runs-on: ubuntu-latest
-#    needs: Second-Job
-#    if: ${{github.ref === 'refs/heads/main'}}
-#    steps:
-#      - run: echo "third job"
+  Third-Job:
+    runs-on: ubuntu-latest
+    needs: Second-Job
+    if: ${{github.ref === 'refs/heads/main'}}
+    steps:
+      - run: echo "third job"
