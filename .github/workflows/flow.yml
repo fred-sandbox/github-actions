@@ -10,7 +10,7 @@ jobs:
       - run: yarn run test
   Second-Job:
     runs-on: ubuntu-latest
-    needs: First-Job
+    needs: Build
     steps:
       - run: echo "second job"
   Third-Job:
