@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "example": "echo this is a test",
-    "timeout": "sleep 5"
+    "timeout": "sleep 10"
   },
   "type": "module",
   "devDependencies": {
