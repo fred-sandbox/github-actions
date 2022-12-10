@@ -14,5 +14,9 @@
   },
   "dependencies": {
     "chai": "^4.3.7"
-  }
+  },
+  "workspaces": [
+    "services/**"
+  ],
+  "private": true
 }
