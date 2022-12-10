@@ -5,7 +5,8 @@
   "repository": "git@github.com:crochet-learning/github-actions.git",
   "license": "MIT",
   "scripts": {
-    "test": "echo this is a test"
+    "example": "echo this is a test",
+    "timeout": "sleep 5"
   },
   "type": "module",
   "devDependencies": {
