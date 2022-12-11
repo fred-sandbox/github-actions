@@ -1,8 +1,8 @@
 import {expect} from 'chai';
 import {returnOne} from '../src/two.js';
 
-describe('one', () => {
-    it('should return one',  () => {
+describe('two', () => {
+    it('should return two',  () => {
         expect(returnOne()).to.be.equal('two');
     });
 });

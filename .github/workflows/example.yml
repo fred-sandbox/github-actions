@@ -7,7 +7,7 @@ jobs:
       - name: GitHub Checkout
         uses: actions/checkout@v2
       - run: yarn install
-      - name: Verify Microservice One
+      - name: Verify
         run: yarn workspaces run verify
   Second-Job:
     runs-on: ubuntu-latest
