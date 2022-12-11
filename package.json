@@ -5,6 +5,17 @@
   "repository": "git@github.com:crochet-learning/github-actions.git",
   "license": "MIT",
   "scripts": {
-    "test": "echo this is a test"
-  }
+    "verify": "yarn workspaces run verify"
+  },
+  "type": "module",
+  "devDependencies": {
+    "mocha": "^10.1.0"
+  },
+  "dependencies": {
+    "chai": "^4.3.7"
+  },
+  "workspaces": [
+    "services/**"
+  ],
+  "private": true
 }
