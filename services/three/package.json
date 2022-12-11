@@ -1,13 +1,13 @@
 {
-  "name": "three",
+  "name": "two",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "three": "echo microservice three",
+    "two": "echo microservice two",
     "timeout": "sleep 10",
     "test": "mocha tests/**",
-    "verify": "yarn run three && yarn run test && yarn run timeout"
+    "verify": "yarn run two && yarn run test && yarn run timeout"
   }
 }
