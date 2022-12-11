@@ -5,8 +5,7 @@
   "repository": "git@github.com:crochet-learning/github-actions.git",
   "license": "MIT",
   "scripts": {
-    "example": "echo this is a test",
-    "timeout": "sleep 10"
+    "verify": "yarn workspaces run verify"
   },
   "type": "module",
   "devDependencies": {

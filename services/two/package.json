@@ -1,0 +1,13 @@
+{
+  "name": "two",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "one": "echo microservice one",
+    "timeout": "sleep 10",
+    "test": "mocha \"tests/**\"",
+    "verify": "yarn run one && yarn run test && yarn run timeout"
+  }
+}
