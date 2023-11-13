@@ -15,3 +15,5 @@ jobs:
     steps:
       - name: echo
         run: echo "BRANCH_NAME = ${{ needs.get-feature-branch.outputs.BRANCH_NAME }}"
+      - name: lowercase
+        run: echo "${needs.get-feature-branch.outputs.BRANCH_NAME,,}"
