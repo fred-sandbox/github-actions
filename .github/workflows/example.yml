@@ -14,7 +14,7 @@ jobs:
     needs: get-feature-branch
     steps:
       - name: echo
-        run: echo "BRANCH_NAME = ${{ needs.get-feature-branch.outputs.BRANCH_NAME }}"
+        run: echo "BRANCH_ID = ${{ needs.get-feature-branch.outputs.BRANCH_NAME }}"
       - name: lowercase
         shell: bash
-        run: echo "$BRANCH_NAME" | sed -e 's/\(.*\)/\L\1/'
+        run: echo "${{ needs.get-feature-branch.outputs.BRANCH_NAME }}" | sed -e 's/\(.*\)/\L\1/'
